@@ -99,7 +99,8 @@ export LANG=en_US.UTF-8
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# Check ~/.dotfiles/aliases.sh for more details.
+source $DOTFILES/aliases.zsh
+
+# opam configuration
+[[ ! -r /Users/Hieudo/.opam/opam-init/init.zsh ]] || source /Users/Hieudo/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
